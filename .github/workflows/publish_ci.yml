@@ -33,7 +33,7 @@ jobs:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
     - name: po-theme-totvs - add "next" tag
-      run: npm dist-tags add @totvs/po-theme@${{ env.PACKAGE_VERSION }} next
+      run: npm dist-tags add @teste-poui-deploy/po-theme@${{ env.PACKAGE_VERSION }} next
       working-directory: ${{env.WORKING_DIR}}
       env:
         PACKAGE_VERSION: ${{ steps.package-version.outputs.current-version }}
